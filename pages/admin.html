@@ -10,8 +10,308 @@
     rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"/>
+    <style>
+        body{
+            /* background-color: rgb(161, 66, 7); */
+            background-color: rgb(225, 237, 208); 
+        }
+        div{
+            background-color: white;
+        }
+
+        .container{
+            text-align: center;
+        
+        }
+        header {
+            background-color: rgb(7, 52, 66);
+            color:white;   
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        nav{
+            /* background-color: rgb(225, 237, 208); */
+            background-color: rgb(161, 66, 7);
+            color:rgb(7, 52, 66);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 30px, 10%;
+        }
+        .nav_links{
+            list-style: none;
+        }
+        .nav_links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav_links li a:hover{
+            color: blue;
+        }
+
+        aside{
+            background-color: rgb(7, 52, 66);
+            color:white;
+            /* margin:50px; */
+            padding-bottom: 50px;
+        } 
+        #home{
+            background-color: rgb(161, 66, 7);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #home:hover{
+            background-color: rgb(159, 214, 104);
+        }
+
+        #userprofile{
+            background-color: rgb(161, 66, 7);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #userprofile:hover{
+            background-color: rgb(159, 214, 104);
+        }
+        #admin{
+            background-color: rgb(161, 66, 7);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #admin:hover{
+            background-color: rgb(159, 214, 104);
+        }
+        .signout{
+            float:right;
+        }
+        #signout{
+            background-color: rgb(161, 66, 7);
+            transition-property: background-color;
+            transition-duration: 0s;
+            float: right;
+        }
+        #signout:hover{
+            background-color: rgb(159, 214, 104);
+        }
+
+
+        #listed{
+            margin: 50px;;
+        }
+        #form{
+            margin: 40px;
+            padding-left: 70px; 
+        }
+        #firstname{
+            margin-bottom: 20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #firstname:hover{
+            background-color: rgb(251, 251, 253);
+        }
+
+        #lastname{
+            margin-bottom: 20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #lastname:hover{
+            background-color: rgb(251, 251, 253);
+        }
+    
+        #username{
+            margin-bottom: 20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #username:hover{
+            background-color: rgb(251, 251, 253);
+        }
+        #password{
+            margin-bottom: 20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #password:hover{
+            background-color: rgb(251, 251, 253);
+        }
+        #newpassword{
+            margin-bottom: 20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #newpassword:hover{
+            background-color: rgb(251, 251, 253);
+        }
+        #dob{
+            margin-bottom: 20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #dob:hover{
+            background-color: rgb(251, 251, 253);
+        }
+        #bio{
+            padding-bottom: 30px;
+            margin-top: 20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #bio:hover{
+            background-color: rgb(251, 251, 253);
+        }
+        #tel{
+            margin-top:20px;
+            background-color: rgb(221, 221, 232);
+            transition-property: background-color;
+            transition-duration: 0s;
+        }
+        #tel:hover{
+            background-color: rgb(251, 251, 253);
+        }
+        #gender{
+            padding-top: 20px;
+            
+        }
+        
+        /* #idfemale{
+            padding-right: 30px;
+        } */
+
+        #card-body-main{
+            padding: 50px;
+            text-align: center;
+        }
+
+        #linkden{
+            background-color: rgb(39, 25, 233);
+            transition-property: background-color;
+            transition-property: transform;
+            transition-duration: 0.2s;
+            
+        }
+
+        #linkden:hover{
+            background-color: rgb(159, 214, 104);
+            transform:rotate(360deg);
+        }
+        footer{
+            background-color: rgb(7, 52, 66);
+            color:white;
+        }
+        #readme {
+            background-color:rgb(161, 66, 7);
+            transition-property: background-color;
+            transition-duration: 0.2s;
+        }
+        #readme:hover{
+            background-color: rgb(159, 214, 104);
+        }
+
+
+
+        
+    </style>
 </head>
 <body>
-    <p>Hello World</p>
+    
+    <div class="container">
+        <header class="row w-150" >
+            <h6 style="text-align: center;"> Welcome Steve</h6>
+        </header>
+        <div class="row w-150">
+        <nav class="nav_links">
+            <div style="background-color:rgb(161, 66, 7)" class="d-flex flex-row bd-highlight mb-3">
+                <ul>
+                <li id="home" style="color:white"><a href="https://www.google.com/"></a>Home</li>
+                <li id="userprofile" style="color:white"><a href="https://www.google.com/"></a>User Profile</li>
+                <li id=admin style="color:white"><a href="https://www.google.com/"></a>Admin</li>
+                <li id=signout style="color:white"><a href="https://www.google.com/"></a>Sign out</li>
+            </ul>
+            </div>
+            
+                <!-- <div class="row w-150">
+                    <nav height="15px">
+                        <div style="background-color:rgb(161, 66, 7)" class="d-flex flex-row bd-highlight mb-3"> -->
+                <!-- <div id="home" style="color:white" class="p-2 bd-highlight"><a style="color: white" class="nav-link active" aria-current="page" href="https://www.google.com/"></a>Home</div>
+                <div id="userprofile" style="color:white" class="p-2 bd-highlight"><a style="color: white" class="nav-link active" aria-current="page" href="#"></a>User Profile</div>
+                <div id=admin style="color:white" class="p-2 bd-highlight"><a style="color: white" class="nav-link active" aria-current="page" href="#"></a>Admin</div>
+                <div id=signout style="color:white"  class=" p-2 bd-highlight"><a style="color: white"  href="#"></a>Sign out</div>
+            </div> -->
+            <!-- class="nav-link active" aria-current="page" -->
+        </nav>
+
+            <aside class="col-5" id="side-bar"> Projects in progress
+
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <div style="background-color:rgb(35, 76, 223);flex-grow:1;" class="p-2 bd-highlight">HTML</div>
+                    <div style="background-color:rgb(14, 95, 49); flex-grow:2" class="p-2 bd-highlight">CSS</div>
+                    <div style="background-color:rgb(94, 195, 232); flex-grow:2" class="p-2 bd-highlight">JavaScript</div>
+                    <div style="background-color:rgb(223, 186, 35); flex-grow:3" class="p-2 bd-highlight">Python</div>
+                    <div style="background-color:rgba(223, 35, 66, 0.741); flex-grow:5" class="p-2 bd-highlight">C++</div>
+
+                </div>
+                        <div style="margin-bottom: 10px; margin-top: 30px;" class="progress">
+                            <div  class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div style="margin-bottom: 10px;"class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div style="margin-bottom: 10px;" class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div style="margin-bottom: 10px;" class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div style="margin-bottom: 10px;" class="progress"> 
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <hr>
+                    
+            </aside>
+            <!-- <div class="col-6" id="card-body">profile pic</div> -->
+            <div class="col-3" id="form">
+                <input id="firstname" type="username" placeholder="First Name"><br>
+                <input id="lastname" type="username" placeholder="Last Name"><br>
+                <input id="username" type="username" placeholder="Username"><br>
+                <input id="password" type="password" placeholder="Password"><br>
+                <input id="newpassword" type="password" placeholder="Re-type Password"><br>
+                <input id="dob "type="date" placeholder="DOB"><br>
+                <input id="bio" type="username" placeholder="Bio"><br>
+                <input id="tel" type="tel" placeholder="(123) 456-7890"><br>
+                <div id="gender">
+                <input id="female" type="radio" name="test" value="value1"> Female
+                <input type="radio" name="test" value="value1">  Male
+            </div>
+            </div>
+            
+            <div class="col-3" id="card-body-main" style="width: 18rem;" >
+                <img style="padding-bottom:10px;" src="https://cdn-icons-png.flaticon.com/128/219/219970.png" class="card-img-top" alt="Profile Picture" >
+                <div class="card-body">
+                    <h5 style="padding-bottom:10px; padding-top:10px;" class="card-title">Steve Jobs</h5>
+                    <p class="card-text">American inventor, designer, and entrepreneur</p>
+                    <a id="linkden" href="https://www.linkedin.com/in/steve-jobs-800510b6/" class="btn btn-primary">Linkedin</a>
+                    </div>
+            </div>
+
+        </div>
+            
+        <footer style="padding-bottom: 100px;" class="row w-150">
+            <div style="background-color:rgb(161, 66, 7)" class="d-flex flex-row bd-highlight mb-3">
+                <div id="readme" style="color:white" class="p-2 bd-highlight"><a style="color: white" class="nav-link active" aria-current="page" href="#"></a>ReadME</div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
